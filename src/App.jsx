@@ -15,7 +15,7 @@ export const App = () => {
     );
   });
 
-  const handleFilter = (event) => {
+  const handleFilter = event => {
     setQuery(event.target.value);
   };
 
@@ -30,6 +30,7 @@ export const App = () => {
 
             <div className="control">
               <input
+                value={query}
                 onChange={handleFilter}
                 type="text"
                 id="search-query"
